@@ -1,0 +1,17 @@
+{
+  "name": "blockly-websocket-server",
+  "version": "1.0.0",
+  "description": "WebSocket server for Blockly collaborative editor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "y-websocket": "^1.4.5",
+    "ws": "^8.13.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
