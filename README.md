@@ -2,9 +2,15 @@
 
 This server handles real-time synchronization for the collaborative Blockly editor using Yjs.
 
+## How it works
+
+- Built with [Yjs](https://yjs.dev/) for conflict-free real-time collaboration
+- Uses WebSockets for efficient real-time communication
+- Handles multiple rooms for separate collaboration spaces
+
 ## Deployment Options
 
-This WebSocket server needs to be deployed to a service that supports WebSockets and persistent connections. Vercel does not support these, so you'll need to use an alternative service.
+This WebSocket server needs to be deployed to a service that supports WebSockets and persistent connections.
 
 ### Option 1: Deploy to Render.com (Recommended)
 
@@ -43,4 +49,4 @@ npm install
 npm start
 ```
 
-The server will be available at http://localhost:1234
+The server will run on port 1234 by default (or the PORT environment variable).

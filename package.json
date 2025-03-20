@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "y-websocket": "^1.4.5",
-    "ws": "^8.13.0"
+    "ws": "^8.13.0",
+    "yjs": "^13.5.52"
   },
   "engines": {
     "node": ">=16.0.0"

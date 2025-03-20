@@ -79,3 +79,9 @@ process.on('SIGINT', () => {
     process.exit(0)
   })
 })
+
+// For health checks
+process.on('SIGTERM', () => {
+  console.log('SIGTERM received, shutting down')
+  process.exit(0)
+})
