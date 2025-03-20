@@ -46,14 +46,7 @@ wss.on('connection', (conn, req) => {
   const pathname = req.url || '/'
   let roomName = pathname.slice(1) // Remove leading slash
   
-  // Handle /yjs/:roomName format
-  if (roomName.startsWith('yjs/')) {
-    roomName = roomName.substring(4) // Remove 'yjs/' prefix
-  }
-  
-  // Get the first path segment if there are multiple
-  roomName = roomName.split('/')[0]
-  
+  // No need to strip prefixes as client is sending the full room ID directly
   console.log(`New WebSocket connection for room: ${roomName}`)
   
   // Set up the WebSocket connection with the extracted room name
